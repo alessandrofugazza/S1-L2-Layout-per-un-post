@@ -15,14 +15,40 @@
       <header>
         <img src="./assets/img/logo.svg" alt="logo di epicode" />
         <p>Epicode - Il blog dei developers</p>
-        <p><a href="#">Home</a></p>
-        <p><a href="#">Articoli</a></p>
-        <p><a href="#">Lavora con noi</a></p>
+        <nav>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">Articoli</a></p>
+          <p><a href="#">Lavora con noi</a></p>
+        </nav>
       </header>
       <main>
         <h1>Come creare un template per i post</h1>
         <p>di Mario Rossi - pubblicato il 25-10-2020</p>
         <!-- Contenuto del post -->
+        <section>
+          <p>
+            La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le
+            <strong>parti comuni</strong> da applicare a tutte le pagine
+          </p>
+          <p>Le varie aree saranno quindi suddivise in:</p>
+          <ul>
+            <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+            <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+          </ul>
+        </section>
+        <h2>Formattazione del codice</h2>
+        <p>
+          Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS.
+          Perciò i passi saranno:
+        </p>
+        <ol>
+          <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+          <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
+
         <section>
           <table>
             <thead>
@@ -66,14 +92,14 @@
         </section>
         <section>
           <p>
-            Un testo di validazione potrà essere fatto tramite il tool online
-            <a href="#">Validazione Online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il
-            nostro obiettivo ed essere stati dei veri developers come loro:
+            Un testo di validazione potrà essere fatto tramite il
+            <a href="https://jigsaw.w3.org/css-validator/" target="blank">tool online</a> dedicato allo scopo. Una volta
+            ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
           </p>
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/I_6ZcOo6pnk"
+            src="https://www.youtube.com/embed/dvOvHXruEDM"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -91,27 +117,28 @@
           </form>
           <!-- Fine newslatter -->
         </section>
+        <aside>
+          <!-- area correlati -->
+          <p>Articoli correlati</p>
+          <p>
+            Validare il codice HTML<br />
+            Categoria: develop<br />
+            Data: 18-9-2020
+          </p>
+          <p>
+            Correggere la sintassi<br />
+            Categoria: develop<br />
+            Data: 16-9-2020<br />
+          </p>
+          <p>
+            Meno Kb nella pagina<br />
+            Categoria: ottimizzazione<br />
+            Data: 30-9-2020<br />
+          </p>
+          <!-- fine area correlati -->
+        </aside>
       </main>
-      <aside>
-        <!-- area correlati -->
-        <p>Articoli correlati</p>
-        <p>
-          Validare il codice HTML<br />
-          Categoria: develop<br />
-          Data: 18-9-2020
-        </p>
-        <p>
-          Correggere la sintassi<br />
-          Categoria: develop<br />
-          Data: 16-9-2020<br />
-        </p>
-        <p>
-          Meno Kb nella pagina<br />
-          Categoria: ottimizzazione<br />
-          Data: 30-9-2020<br />
-        </p>
-        <!-- fine area correlati -->
-      </aside>
+
       <footer>
         <!-- copyright e info -->
         <p>Blog Epicode &copy;2023</p>
